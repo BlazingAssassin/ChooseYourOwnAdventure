@@ -6,41 +6,62 @@ var game = {
     levels: {
 
         start: {
-            message: "You come across a dark cave",
+            message: "You come across a man at night",
             choices: [
                 {
-                    text: "Enter the cave",
+                    text: "Fight with the man",
                     nextLevel: "cave",
                 },
 
                 {
-                    text: "Keep on moving",
+                    text: "Dip on him and run!",
                     nextLevel: "field",
                 },
             ]
         },
 
         cave: {
-            background_image: "fire.gif",
+            background_image: "-man-in-hood-dark-figure-in-a-hooded-sweatshirt-incognito-boy.jpg",
             music: "Final-Fantasy-7-Boss-Battle.mp3",
-            message: "You come across a fire monster or something!",
+            message: "He pulls a gun!!!",
             choices: [
                 {
-                    text: "Start over",
-                    nextLevel: "start",
+                    text: "Think about your options",
+                    nextLevel: "Fight",
                 },
             ]
         },
 
         field: {
-            message: "Some adventurer you are...",
+            message: "Good Job You didn't get dropped",
             choices: [
                 {
                     text: "Start over",
                     nextLevel: "start",
+                    
+                    
                 },
             ]
         },
+        Fight: {
+                   background_image: "-man-in-hood-dark-figure-in-a-hooded-sweatshirt-incognito-boy.jpg",
+                   music: "Final-Fantasy-7-Boss-Battle.mp3",
+                   message:" He holds the gun",
+                   choices: [
+                      {
+                          text:" Hit him and run",
+                          nextLevel:"field",
+                      
+                             
+                          }
+                          
+                          
+                        
+                      , ]
+               }
 
     }
 };
+
+               
+ 
